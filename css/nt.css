@@ -760,9 +760,13 @@ SPONSORS
       justify-content: center; } }
   .sponsor-list .sponsor {
     width: calc(100% / 3);
-    padding: 0 10px 30px 10px;
-    max-width: 260px;
-    list-style: none; }
+    padding: 0 2.5% 30px 2.5%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .sponsor-list .sponsor p {
+      max-width: 260px; }
     @media only screen and (max-width: 600px) {
       .sponsor-list .sponsor {
         width: 100%;
@@ -771,7 +775,9 @@ SPONSORS
   .sponsor-list .sponsor__logo {
     border: 1px solid #eee;
     padding: 24px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: 260px;
+    width: 100%; }
     @media only screen and (max-width: 600px) {
       .sponsor-list .sponsor__logo {
         width: 100%;
@@ -1001,10 +1007,17 @@ SPONSORS
 .judges {
   margin-bottom: 24px;
   padding-top: 24px; }
+  @media only screen and (min-width: 600px) {
+    .judges {
+      width: 50%; } }
 
 .judge-list {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;
+  width: 100%;
+  flex-wrap: wrap; }
   .judge-list:before, .judge-list:after {
     content: " ";
     display: table; }
@@ -1014,7 +1027,12 @@ SPONSORS
     *zoom: 1; }
 
 .judge {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
   .judge:before, .judge:after {
     content: " ";
     display: table; }
@@ -1024,27 +1042,22 @@ SPONSORS
     *zoom: 1; }
 
 .judge__photo {
-  float: left;
-  width: 20%;
-  max-width: 60px;
-  margin-right: 12px;
-  border-radius: 125px; }
+  border-radius: 50%;
+  max-width: 200px;
+  width: 80%;
+  margin: 0 10%; }
 
 .judge__name {
   font-size: 18px; }
 
 .judge__role {
   display: block;
-  font-size: 14px; }
+  font-size: 14px;
+  text-align: center; }
 
 @media only screen and (min-width: 600px) {
   .judge {
-    float: left;
-    margin-left: 2%;
-    width: 48%; }
-    .judge:nth-child(odd) {
-      clear: left;
-      margin-left: 0; } }
+    width: 50%; } }
 @media only screen and (min-width: 1000px) {
   .judge-list {
     margin-left: 0; }

@@ -480,9 +480,14 @@ SPONSORS
     }
     .sponsor {
         width: calc(100% / 3);
-        padding: 0 10px 30px 10px;
-        max-width: 260px;
+        padding: 0 2.5% 30px 2.5%;
         list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p{
+            max-width: 260px;
+        }
         @media only screen and (max-width: $lap) {
             width: 100%;
             max-width: none;
@@ -493,12 +498,15 @@ SPONSORS
         border: 1px solid #eee;
         padding: 24px;
         margin-bottom: 20px;
+        max-width: 260px;
+        width: 100%; 
         @media only screen and (max-width: $lap) {
             width: 100%;
             padding: 24px 20%;
         }
     }
 }
+
 
 
 /* ========================================
@@ -589,6 +597,7 @@ Archive
     color: #cacaca;
     padding: 0 3px;
 }
+
 
 
 /* ========================================
