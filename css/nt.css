@@ -563,7 +563,7 @@ HEADER
       font-weight: normal; } }
 
 .header__bg {
-  background: url("../img/header-bg.png") right center no-repeat;
+  background: url("../img/header-bg-opt.jpg") right center no-repeat;
   background-size: cover; }
 
 .home-header {
@@ -655,6 +655,8 @@ EVENT DETAILS
   .speaker .topic {
     line-height: 150%;
     padding: 0 0 20px 0; }
+    .speaker .topic.tsa-2016 {
+      font-size: 30px; }
     .speaker .topic strong {
       display: block;
       margin-bottom: 6px;
@@ -749,6 +751,30 @@ CATEGORIES
   .category__logo {
     width: 100%; } }
 /* ========================================
+CATEGORIES FRONT PAGE
+======================================== */
+.category-list-front {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+
+.category-front {
+  width: 50%;
+  padding: 20px; }
+
+.category-img-front {
+  width: 100%;
+  padding: 30px 20%;
+  border-radius: 50%;
+  transition: ease-in-out 0.2s; }
+  .category-img-front:hover {
+    transform: scale(1.05); }
+
+@media only screen and (max-width: 600px) {
+  .category-front {
+    width: 100%;
+    padding: 10px 20px; } }
+/* ========================================
 SPONSORS
 ======================================== */
 .sponsor-list {
@@ -760,28 +786,35 @@ SPONSORS
       justify-content: center; } }
   .sponsor-list .sponsor {
     width: calc(100% / 3);
-    padding: 0 2.5% 30px 2.5%;
+    padding: 0 20px 30px 20px;
     list-style: none;
     display: flex;
     align-items: center;
     flex-direction: column; }
     .sponsor-list .sponsor p {
-      max-width: 260px; }
+      max-width: 260px;
+      text-align: center; }
+      @media only screen and (max-width: 600px) {
+        .sponsor-list .sponsor p {
+          width: 100%;
+          max-width: none;
+          padding: 0 24px;
+          max-width: none; } }
     @media only screen and (max-width: 600px) {
       .sponsor-list .sponsor {
         width: 100%;
         max-width: none;
         padding: 20px 0; } }
   .sponsor-list .sponsor__logo {
+    width: calc(100% - 20px);
     border: 1px solid #eee;
     padding: 24px;
-    margin-bottom: 20px;
-    max-width: 260px;
-    width: 100%; }
+    margin: 10px;
+    max-width: 260px; }
     @media only screen and (max-width: 600px) {
       .sponsor-list .sponsor__logo {
-        width: 100%;
-        padding: 24px 20%; } }
+        padding: 24px 20%;
+        max-width: none; } }
 
 /* ========================================
 Location
@@ -1017,7 +1050,8 @@ SPONSORS
   margin-bottom: 0;
   list-style: none;
   width: 100%;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 10px 0; }
   .judge-list:before, .judge-list:after {
     content: " ";
     display: table; }
@@ -1344,8 +1378,55 @@ SPONSORS
     float: left;
     padding-left: 48px; } }
 
-.tito-button button {
-  background: none;
-  color: #FFF; }
+.tito-wrap {
+  position: absolute;
+  right: 24px;
+  top: 24px; }
+  @media only screen and (max-width: 600px) {
+    .tito-wrap {
+      position: relative;
+      right: 0;
+      top: 10px; } }
+
+.tito-button {
+  background: none !important;
+  color: #FFF !important;
+  display: inline-block !important;
+  padding: 12px 24px !important;
+  background: #1acd55 !important;
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  letter-spacing: 0.05em !important;
+  border-radius: 3px !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) !important;
+  outline: none;
+  box-shadow: none;
+  transition: background-color .3s ease !important; }
+  .tito-button:hover, .tito-button:focus {
+    background: #17b64c;
+    text-decoration: none; }
+  .tito-button button {
+    background: none !important;
+    color: #FFF !important;
+    display: inline-block !important;
+    padding: 12px 24px !important;
+    background: #1acd55 !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    letter-spacing: 0.05em !important;
+    border-radius: 3px !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) !important;
+    outline: none;
+    box-shadow: none;
+    transition: background-color .3s ease !important; }
+    .tito-button button:hover, .tito-button button:focus {
+      background: #17b64c;
+      text-decoration: none; }
 
 /*# sourceMappingURL=nt.css.map */

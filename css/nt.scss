@@ -216,7 +216,7 @@ HEADER
 }
 
 .header__bg {
-    background: url('../img/header-bg.png') right center no-repeat;
+    background: url('../img/header-bg-opt.jpg') right center no-repeat;
     background-size: cover;
 }
 
@@ -356,6 +356,9 @@ EVENT DETAILS
     .topic {
         line-height: 150%;
         padding: 0 0 20px 0;
+        &.tsa-2016{
+            font-size: 30px; 
+        }
         strong {
             display: block;
             margin-bottom: $space/2;
@@ -466,6 +469,37 @@ CATEGORIES
     }
 }
 
+/* ========================================
+CATEGORIES FRONT PAGE
+======================================== */
+
+.category-list-front {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-front {
+    width: 50%;
+    padding: 20px;
+}
+
+.category-img-front {
+    width: 100%;
+    padding: 30px 20%;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+    &:hover{
+        transform: scale(1.05);
+    } 
+}
+
+@media only screen and (max-width: $lap) {
+    .category-front {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
 
 /* ========================================
 SPONSORS
@@ -480,13 +514,20 @@ SPONSORS
     }
     .sponsor {
         width: calc(100% / 3);
-        padding: 0 2.5% 30px 2.5%;
+        padding: 0 20px 30px 20px;
         list-style: none;
         display: flex;
         align-items: center;
         flex-direction: column;
         p{
             max-width: 260px;
+            text-align: center;
+            @media only screen and (max-width: $lap) {
+                width: 100%;
+                max-width: none;
+                padding: 0 24px;
+                max-width: none; 
+            }
         }
         @media only screen and (max-width: $lap) {
             width: 100%;
@@ -495,14 +536,14 @@ SPONSORS
         }
     }
     .sponsor__logo {
+        width: calc(100% - 20px);
         border: 1px solid #eee;
         padding: 24px;
-        margin-bottom: 20px;
+        margin: 10px;
         max-width: 260px;
-        width: 100%; 
         @media only screen and (max-width: $lap) {
-            width: 100%;
             padding: 24px 20%;
+            max-width: none;
         }
     }
 }
@@ -650,3 +691,5 @@ FOOTER
 @import 'awards';
 @import 'awards-2015';
 @import 'jon';
+
+// Icon made by [Madebyoliver] from www.flaticon.com 
