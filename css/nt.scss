@@ -1,5 +1,3 @@
-/*!* Nott Tuesday by Joseph Russell and Chris Bailey at JH */
-
 @import 'normalize';
 @import 'vars';
 @import 'mixins';
@@ -13,6 +11,13 @@ RESET
     border: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+::selection {
+  background: #d9f7e3; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #d9f7e3; /* Gecko Browsers */
 }
 
 
@@ -144,6 +149,12 @@ p small {
         background: darken($green, 5%);
         text-decoration: none;
     }
+    &.startup-award{
+        width: 100%; 
+    }
+    &.cta-button{
+        padding: 18px 24px; 
+    }
 }
 
 img {
@@ -175,6 +186,10 @@ hr {
 
 .nav--inline > li > a {
     display: inline-block;
+}
+
+.align-margin{
+    margin-top: auto; 
 }
 
 
@@ -477,18 +492,26 @@ CATEGORIES FRONT PAGE
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .category-front {
     width: 50%;
     padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    p{
+        margin-bottom: 30px; 
+    }
 }
 
 .category-img-front {
-    width: 100%;
-    padding: 30px 20%;
+    width: 200px;
+    height: 200px;  
     border-radius: 50%;
     transition: ease-in-out 0.2s;
+    margin: 0 auto 30px auto; 
     &:hover{
         transform: scale(1.05);
     } 
@@ -497,7 +520,7 @@ CATEGORIES FRONT PAGE
 @media only screen and (max-width: $lap) {
     .category-front {
         width: 100%;
-        padding: 10px 20px;
+        padding: 30px 20px;
     }
 }
 
@@ -513,20 +536,31 @@ SPONSORS
         justify-content: center;
     }
     .sponsor {
-        width: calc(100% / 3);
         padding: 0 20px 30px 20px;
         list-style: none;
         display: flex;
         align-items: center;
         flex-direction: column;
-        p{
+        &.third {
+            width: calc(100% / 3);
+        }
+        &.half {
+            width: 50%;
+            .sponsor__logo {
+                max-width: none;
+            }
+            p{
+                max-width: none; 
+            }
+        }
+        p {
             max-width: 260px;
             text-align: center;
             @media only screen and (max-width: $lap) {
                 width: 100%;
                 max-width: none;
                 padding: 0 24px;
-                max-width: none; 
+                max-width: none;
             }
         }
         @media only screen and (max-width: $lap) {
@@ -547,6 +581,7 @@ SPONSORS
         }
     }
 }
+
 
 
 

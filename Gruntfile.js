@@ -23,7 +23,8 @@ module.exports = function (grunt) {
                     src: [
                         "css/*.css",
                         "*.html",
-                        "awards/*.html"
+                        "awards/*.html",
+                        "form/*.html"
                     ]
                 },
                 options: {
