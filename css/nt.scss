@@ -530,7 +530,7 @@ SPONSORS
 
 .sponsor-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     @media only screen and (max-width: $lap) {
         justify-content: center;
@@ -583,8 +583,94 @@ SPONSORS
 }
 
 
+/* ========================================
+SPONSORS FRONT PAGE
+======================================== */
 
 
+.sponsor-logo__front {
+    width: calc(100% - 20px);
+    border: 1px solid #eee;
+    padding: 24px;
+    margin: 10px;
+    &.Small{
+       height: 100px;  
+    }
+    &.Mid{
+        height: 150px; 
+    }
+    &.Large{
+        height: 200px; 
+    }
+    @media only screen and (max-width: $lap) {
+        padding: 24px 20%;
+        max-width: none;
+    }
+    &.accelerate{
+        background: url('../img/sponsors/accelerate.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.roller{
+        background: url('../img/sponsors/roller.svg') center no-repeat;
+        background-size: 70%;
+    }
+    &.g2{
+        background: url('../img/sponsors/g2.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.evershed{
+        background: url('../img/sponsors/evershed.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.paypal{
+        background: url('../img/sponsors/paypal.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.jh{
+        background: url('../img/sponsors/jh.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.esendex{
+        background: url('../img/sponsors/esendex.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.first-enterprise{
+        background: url('../img/sponsors/first-enterprise.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.skeleton-productions{
+        background: url('../img/sponsors/skeleton-productions.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.shoosmiths{
+        background: url('../img/sponsors/shoosmiths.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.next-business-generation{
+        background: url('../img/sponsors/next-business-generation.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.security-aware{
+        background: url('../img/sponsors/security-aware.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.creative-quarter{
+        background: url('../img/sponsors/creative-quarter.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.esper{
+        background: url('../img/sponsors/esper.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.d2n2{
+        background: url('../img/sponsors/d2n2.png') center no-repeat;
+        background-size: 80%;
+    }
+}
+
+.Icon-wrap{
+    width: 100%; 
+}
 /* ========================================
 Location
 ======================================== */
@@ -690,7 +776,7 @@ FOOTER
         color: $light-grey;
     }
     a {
-        color: white;
+        color: $light-blue;
     }
 }
 

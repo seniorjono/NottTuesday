@@ -800,7 +800,7 @@ SPONSORS
 ======================================== */
 .sponsor-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap; }
   @media only screen and (max-width: 600px) {
     .sponsor-list {
@@ -843,6 +843,73 @@ SPONSORS
       .sponsor-list .sponsor__logo {
         padding: 24px 20%;
         max-width: none; } }
+
+/* ========================================
+SPONSORS FRONT PAGE
+======================================== */
+.sponsor-logo__front {
+  width: calc(100% - 20px);
+  border: 1px solid #eee;
+  padding: 24px;
+  margin: 10px; }
+  .sponsor-logo__front.Small {
+    height: 100px; }
+  .sponsor-logo__front.Mid {
+    height: 150px; }
+  .sponsor-logo__front.Large {
+    height: 200px; }
+  @media only screen and (max-width: 600px) {
+    .sponsor-logo__front {
+      padding: 24px 20%;
+      max-width: none; } }
+  .sponsor-logo__front.accelerate {
+    background: url("../img/sponsors/accelerate.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.roller {
+    background: url("../img/sponsors/roller.svg") center no-repeat;
+    background-size: 70%; }
+  .sponsor-logo__front.g2 {
+    background: url("../img/sponsors/g2.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.evershed {
+    background: url("../img/sponsors/evershed.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.paypal {
+    background: url("../img/sponsors/paypal.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.jh {
+    background: url("../img/sponsors/jh.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.esendex {
+    background: url("../img/sponsors/esendex.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.first-enterprise {
+    background: url("../img/sponsors/first-enterprise.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.skeleton-productions {
+    background: url("../img/sponsors/skeleton-productions.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.shoosmiths {
+    background: url("../img/sponsors/shoosmiths.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.next-business-generation {
+    background: url("../img/sponsors/next-business-generation.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.security-aware {
+    background: url("../img/sponsors/security-aware.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.creative-quarter {
+    background: url("../img/sponsors/creative-quarter.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.esper {
+    background: url("../img/sponsors/esper.png") center no-repeat;
+    background-size: 80%; }
+  .sponsor-logo__front.d2n2 {
+    background: url("../img/sponsors/d2n2.png") center no-repeat;
+    background-size: 80%; }
+
+.Icon-wrap {
+  width: 100%; }
 
 /* ========================================
 Location
@@ -922,7 +989,7 @@ FOOTER
   .site-footer p {
     color: #e3e3e3; }
   .site-footer a {
-    color: white; }
+    color: #99b3ca; }
 
 .about {
   margin-bottom: 24px; }
