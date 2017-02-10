@@ -1,0 +1,75 @@
+2017-01-27 13:21:11.435523 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-27 13:21:42.744054 - DEBUG --> processSalesforceResponse: Received access code (aPrxVyeZrusRBnchkTKW1UmX7jhR4C6P3B_ciw4DmGCp2pjr_wuJvQau391gD5BfuxoziMDSUQ==). Now fetching Access Token. 
+2017-01-27 13:21:43.404954 - ERROR --> processSalesforceResponse: Clearing token, since there was an error. 
+2017-01-27 13:21:43.405262 - DEBUG --> Token was cleared. 
+2017-01-27 13:21:43.406104 - DEBUG --> Refresh Token cleared 
+2017-01-27 13:21:43.406284 - ERROR --> processSalesforceResponse: This authorization request has expired, or (less likely) the IP is restricted or invalid login hours. [Raw error message: Error in retrieving token: "invalid_grant"] 
+2017-01-27 13:21:44.980848 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-27 15:32:15.318753 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-27 15:32:15.319714 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-27 15:32:15.319830 - ERROR --> export(): Invalid API.  
+2017-01-28 16:32:07.676333 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-28 16:32:07.686726 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-28 16:32:07.686866 - ERROR --> export(): Invalid API.  
+2017-01-28 19:31:24.862409 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-28 19:31:24.863056 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-28 19:31:24.863157 - ERROR --> export(): Invalid API.  
+2017-01-29 18:04:04.585473 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-29 18:04:04.605216 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-29 18:04:04.605345 - ERROR --> export(): Invalid API.  
+2017-01-29 19:04:03.888196 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-29 19:04:03.888797 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-29 19:04:03.888916 - ERROR --> getObjectTypes(): API is invalid.  
+2017-01-29 19:04:20.940042 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-29 19:04:20.940711 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-29 19:04:20.940819 - ERROR --> getObjectTypes(): API is invalid.  
+2017-01-29 19:07:03.133362 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-29 19:07:03.134008 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-29 19:07:03.134114 - ERROR --> getObjectTypes(): API is invalid.  
+2017-01-29 19:25:13.549820 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-29 19:25:13.550354 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-29 19:25:13.550456 - ERROR --> export(): Invalid API.  
+2017-01-30 6:47:05.989654 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-30 6:47:06.004511 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-30 6:47:06.004652 - ERROR --> export(): Invalid API.  
+2017-01-30 10:36:20.519462 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-30 10:36:20.521172 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-30 10:36:20.521307 - ERROR --> getObjectTypes(): API is invalid.  
+2017-01-30 10:36:27.632594 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-30 10:36:27.633352 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-30 10:36:27.634334 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-30 10:36:32.926269 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-30 11:44:01.869050 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-30 11:44:01.869848 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-30 11:44:01.870939 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-30 11:44:06.555461 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-30 18:51:56.233995 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-30 18:51:56.234836 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-30 18:51:56.234936 - ERROR --> export(): Invalid API.  
+2017-01-31 17:17:00.655508 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-31 17:17:00.665896 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-31 17:17:00.666008 - ERROR --> export(): Invalid API.  
+2017-01-31 21:51:34.250468 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-01-31 21:51:34.252463 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-01-31 21:51:34.252594 - ERROR --> export(): Invalid API.  
+2017-02-01 14:18:04.514410 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-02-01 14:18:04.532461 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-02-01 14:18:04.532612 - ERROR --> export(): Invalid API.  
+2017-02-02 9:32:01.863934 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-02-02 9:32:01.874399 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-02-02 9:32:01.874567 - ERROR --> getObjectTypes(): API is invalid.  
+2017-02-02 9:33:03.039782 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-02-02 9:33:03.041425 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-02-02 9:33:03.041553 - ERROR --> getObjectTypes(): API is invalid.  
+2017-02-02 11:03:08.896608 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-02-02 11:03:08.897283 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-02-02 11:03:08.897392 - ERROR --> export(): Invalid API.  
+2017-02-02 13:12:44.388755 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-02-02 13:12:44.389306 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-02-02 13:12:44.389405 - ERROR --> export(): Invalid API.  
+2017-02-02 14:10:59.371136 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-02-02 14:10:59.371675 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-02-02 14:10:59.371778 - ERROR --> export(): Invalid API.  
+2017-02-02 16:31:26.161825 - DEBUG --> get_api(): The access token is empty - app is not yet authenticated 
+2017-02-02 16:31:26.162894 - ERROR --> api_is_valid(): $api is string or has an error:  
+2017-02-02 16:31:26.163007 - ERROR --> export(): Invalid API.  

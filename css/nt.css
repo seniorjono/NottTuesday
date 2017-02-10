@@ -798,114 +798,110 @@ CATEGORIES FRONT PAGE
 /* ========================================
 SPONSORS
 ======================================== */
+@media only screen and (max-width: 600px) {
+  .sponsors {
+    padding: 30px 20px; } }
+
 .sponsor-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap; }
   @media only screen and (max-width: 600px) {
     .sponsor-list {
       justify-content: center; } }
-  .sponsor-list .sponsor {
-    padding: 0 20px 30px 20px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-    .sponsor-list .sponsor.third {
-      width: calc(100% / 3); }
-    .sponsor-list .sponsor.half {
-      width: 50%; }
-      .sponsor-list .sponsor.half .sponsor__logo {
-        max-width: none; }
-      .sponsor-list .sponsor.half p {
-        max-width: none; }
-    .sponsor-list .sponsor p {
-      max-width: 260px;
-      text-align: center; }
-      @media only screen and (max-width: 600px) {
-        .sponsor-list .sponsor p {
-          width: 100%;
-          max-width: none;
-          padding: 0 24px;
-          max-width: none; } }
+
+.sponsor {
+  padding: 0 20px 30px 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .sponsor.Small {
+    width: 200px; }
     @media only screen and (max-width: 600px) {
-      .sponsor-list .sponsor {
-        width: 100%;
-        max-width: none;
-        padding: 20px 0; } }
-  .sponsor-list .sponsor__logo {
-    width: calc(100% - 20px);
-    border: 1px solid #eee;
-    padding: 24px;
-    margin: 10px;
-    max-width: 260px; }
+      .sponsor.Small {
+        width: 100%; } }
+  .sponsor.Mid {
+    width: 280px; }
     @media only screen and (max-width: 600px) {
-      .sponsor-list .sponsor__logo {
-        padding: 24px 20%;
-        max-width: none; } }
+      .sponsor.Mid {
+        width: 100%; } }
+  .sponsor.Large {
+    width: 400px; }
+    @media only screen and (max-width: 600px) {
+      .sponsor.Large {
+        width: 100%; } }
 
 /* ========================================
 SPONSORS FRONT PAGE
 ======================================== */
-.sponsor-logo__front {
+.Sponsor-logo {
   width: calc(100% - 20px);
   border: 1px solid #eee;
   padding: 24px;
   margin: 10px; }
-  .sponsor-logo__front.Small {
+  .Sponsor-logo.Small {
     height: 100px; }
-  .sponsor-logo__front.Mid {
+    @media only screen and (max-width: 600px) {
+      .Sponsor-logo.Small {
+        height: 150px; } }
+  .Sponsor-logo.Mid {
     height: 150px; }
-  .sponsor-logo__front.Large {
+    @media only screen and (max-width: 600px) {
+      .Sponsor-logo.Mid {
+        height: 200px; } }
+  .Sponsor-logo.Large {
     height: 200px; }
-  @media only screen and (max-width: 600px) {
-    .sponsor-logo__front {
-      padding: 24px 20%;
-      max-width: none; } }
-  .sponsor-logo__front.accelerate {
+    @media only screen and (max-width: 600px) {
+      .Sponsor-logo.Large {
+        height: 250px; } }
+  .Sponsor-logo.accelerate {
     background: url("../img/sponsors/accelerate.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.roller {
+  .Sponsor-logo.roller {
     background: url("../img/sponsors/roller.svg") center no-repeat;
     background-size: 70%; }
-  .sponsor-logo__front.g2 {
+  .Sponsor-logo.g2 {
     background: url("../img/sponsors/g2.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.evershed {
+  .Sponsor-logo.evershed {
     background: url("../img/sponsors/evershed.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.paypal {
+  .Sponsor-logo.paypal {
     background: url("../img/sponsors/paypal.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.jh {
+  .Sponsor-logo.jh {
     background: url("../img/sponsors/jh.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.esendex {
+  .Sponsor-logo.esendex {
     background: url("../img/sponsors/esendex.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.first-enterprise {
+  .Sponsor-logo.first-enterprise {
     background: url("../img/sponsors/first-enterprise.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.skeleton-productions {
+  .Sponsor-logo.skeleton-productions {
     background: url("../img/sponsors/skeleton-productions.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.shoosmiths {
+  .Sponsor-logo.shoosmiths {
     background: url("../img/sponsors/shoosmiths.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.next-business-generation {
+  .Sponsor-logo.next-business-generation {
     background: url("../img/sponsors/next-business-generation.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.security-aware {
+  .Sponsor-logo.security-aware {
     background: url("../img/sponsors/security-aware.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.creative-quarter {
+  .Sponsor-logo.creative-quarter {
     background: url("../img/sponsors/creative-quarter.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.esper {
+  .Sponsor-logo.esper {
     background: url("../img/sponsors/esper.png") center no-repeat;
     background-size: 80%; }
-  .sponsor-logo__front.d2n2 {
+  .Sponsor-logo.d2n2 {
     background: url("../img/sponsors/d2n2.png") center no-repeat;
+    background-size: 80%; }
+  .Sponsor-logo.caribe {
+    background: url("../img/sponsors/caribe.png") center no-repeat;
     background-size: 80%; }
 
 .Icon-wrap {

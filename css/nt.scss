@@ -527,60 +527,49 @@ CATEGORIES FRONT PAGE
 /* ========================================
 SPONSORS
 ======================================== */
+ .sponsors {
+     @media only screen and (max-width: $lap) {
+         padding: 30px 20px;
+     }
+ }
+ 
+ .sponsor-list {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     @media only screen and (max-width: $lap) {
+         justify-content: center;
+     }
+ }
 
-.sponsor-list {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    @media only screen and (max-width: $lap) {
-        justify-content: center;
-    }
-    .sponsor {
-        padding: 0 20px 30px 20px;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        &.third {
-            width: calc(100% / 3);
-        }
-        &.half {
-            width: 50%;
-            .sponsor__logo {
-                max-width: none;
-            }
-            p{
-                max-width: none; 
-            }
-        }
-        p {
-            max-width: 260px;
-            text-align: center;
-            @media only screen and (max-width: $lap) {
-                width: 100%;
-                max-width: none;
-                padding: 0 24px;
-                max-width: none;
-            }
-        }
-        @media only screen and (max-width: $lap) {
-            width: 100%;
-            max-width: none;
-            padding: 20px 0;
-        }
-    }
-    .sponsor__logo {
-        width: calc(100% - 20px);
-        border: 1px solid #eee;
-        padding: 24px;
-        margin: 10px;
-        max-width: 260px;
-        @media only screen and (max-width: $lap) {
-            padding: 24px 20%;
-            max-width: none;
-        }
-    }
+   
+.sponsor {
+   padding: 0 20px 30px 20px;
+   list-style: none;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   &.Small {
+    width: 200px; 
+       @media only screen and (max-width: $lap) {
+           width: 100%;
+       }
+   }
+   &.Mid {
+    width: 280px; 
+       @media only screen and (max-width: $lap) {
+           width: 100%;
+       }
+   }
+   &.Large {
+    width: 400px; 
+       @media only screen and (max-width: $lap) {
+           width: 100%;
+       }
+   }
 }
+
+
 
 
 /* ========================================
@@ -588,23 +577,28 @@ SPONSORS FRONT PAGE
 ======================================== */
 
 
-.sponsor-logo__front {
+.Sponsor-logo {
     width: calc(100% - 20px);
     border: 1px solid #eee;
     padding: 24px;
     margin: 10px;
     &.Small{
-       height: 100px;  
+       height: 100px;
+       @media only screen and (max-width: $lap) {
+           height: 150px;
+       } 
     }
     &.Mid{
-        height: 150px; 
+        height: 150px;
+               @media only screen and (max-width: $lap) {
+           height: 200px;
+       }
     }
     &.Large{
-        height: 200px; 
-    }
-    @media only screen and (max-width: $lap) {
-        padding: 24px 20%;
-        max-width: none;
+        height: 200px;
+        @media only screen and (max-width: $lap) {
+           height: 250px;
+       }
     }
     &.accelerate{
         background: url('../img/sponsors/accelerate.png') center no-repeat;
@@ -664,6 +658,10 @@ SPONSORS FRONT PAGE
     }
     &.d2n2{
         background: url('../img/sponsors/d2n2.png') center no-repeat;
+        background-size: 80%;
+    }
+    &.caribe{
+        background: url('../img/sponsors/caribe.png') center no-repeat;
         background-size: 80%;
     }
 }
@@ -794,6 +792,8 @@ FOOTER
     padding-top: 2*$space;
     color: rgba(white, 0.5);
 }
+
+
 
 @media only screen and (min-width: $desk) {
     .about {
